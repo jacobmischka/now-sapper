@@ -1,6 +1,6 @@
 {
   "name": "@jacobmischka/now-sapper",
-  "version": "0.22.3",
+  "version": "0.22.4",
   "license": "MIT",
   "description": "ZEIT Now v2.0 builder for Sapper",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "@now/build-utils": ">=0.0.1"
   },
   "scripts": {
-    "pub": "git add -A && yarn version --minor && npm publish"
+    "pub": "git add -A && yarn version --patch && npm publish"
   },
   "repository": "https://github.com/thgh/now-sapper",
   "keywords": [
@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/thgh/now-sapper/issues"
   },
-  "homepage": "https://github.com/thgh/now-sapper#readme"
+  "homepage": "https://github.com/thgh/now-sapper#readme",
+  "devDependencies": {
+    "yarn": "^1.15.2"
+  }
 }

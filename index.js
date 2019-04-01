@@ -26,7 +26,7 @@ exports.build = async ({ files, entrypoint, workPath }) => {
   const userFiles = rename(files, name => path.join('user', name))
 
   const userPath = path.join(workPath, 'user');
-  await spawnAsync('yarn', userPath);
+  await spawnAsync('yarn', [], userPath);
 
   // Get launcher
   const launcherFiles = {

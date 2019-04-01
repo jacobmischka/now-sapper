@@ -3,7 +3,7 @@
 const {createLambda} = require('@now/build-utils/lambda.js'); // eslint-disable-line import/no-extraneous-dependencies
 const path = require('path');
 const rename = require('@now/build-utils/fs/rename.js'); // eslint-disable-line import/no-extraneous-dependencies
-const {runNpmInstall} = require('@now/build-utils/fs/run-user-scriopts.js');
+const {runNpmInstall} = require('@now/build-utils/fs/run-user-scripts.js');
 
 const FileBlob = require('@now/build-utils/file-blob.js');
 const FileFsRef = require('@now/build-utils/file-fs-ref.js');

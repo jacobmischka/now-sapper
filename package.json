@@ -1,5 +1,5 @@
 {
-  "name": "now-sapper",
+  "name": "@jacobmischka/now-sapper",
   "version": "0.22.0",
   "license": "MIT",
   "description": "ZEIT Now v2.0 builder for Sapper",

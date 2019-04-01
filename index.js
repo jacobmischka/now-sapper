@@ -1,5 +1,6 @@
 /** @format */
 
+const download = require('@now/build-utils/fs/download.js'); // eslint-disable-line import/no-extraneous-dependencies
 const {createLambda} = require('@now/build-utils/lambda.js'); // eslint-disable-line import/no-extraneous-dependencies
 const path = require('path');
 const rename = require('@now/build-utils/fs/rename.js'); // eslint-disable-line import/no-extraneous-dependencies
@@ -31,6 +32,7 @@ exports.build = async ({files, entrypoint, workPath}) => {
   const userFiles = rename(files, name => path.join('user', name));
 
   const userPath = path.join(workPath, 'user');
+  await download(files, userPath);
   await runNpmInstall(userPath, ['--prefer-offline']);
 
   // Get launcher
